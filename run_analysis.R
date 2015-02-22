@@ -48,8 +48,4 @@ run_analysis <- function (datalocation1=character, datalocation2=character, data
 
         write.table(x, "summarydata.txt", row.names=FALSE)
 
-
-
-
-
 }
