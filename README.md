@@ -45,6 +45,29 @@ To now generate mean values of the variables by "Subject" and "Activity" an addi
 
 Finally, the data is ordered by the Subject number and written into a text file titled "summarydata.txt".
 
+####See Also
+
+Codebook.md  for data description
+
+https://github.com/andykannurpatti/getdata-CourseProject/blob/master/Codebook.md
+
+column_names.txt for variable names in the output "summarydata.txt"
+
+https://github.com/andykannurpatti/getdata-CourseProject/blob/master/column_names.txt
+
+run_analysis.R
+
+https://github.com/andykannurpatti/getdata-CourseProject/blob/master/run_analysis.R
+
+
+#####Example
+
+
+run_analysis("test","train")
+
+To review the output, requires the use the following command in R:
+
+data <- read.table("summarydata.txt", header=TRUE)
 
 
 
@@ -56,18 +79,18 @@ Finally, the data is ordered by the Subject number and written into a text file 
 
 
 
-------------------------------------------------------------------
+
+
+#####Reference
 
 Human Activity Recognition Using Smartphones Data set
 Version 1.0
-
-------------------------------------------------------------------
 
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
+activityrecognition@smartlab.ws 
 www.smartlab.ws
 
 ------------------------------------------------------------------
