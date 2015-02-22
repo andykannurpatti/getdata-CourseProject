@@ -14,10 +14,10 @@ run_analysis(datalocation1=character, datalocation2=character, datatype1 ="mean"
 
 ###Arguments
 ------------------------------------------------------------------------------------------
-datalocation1          |file location for test data, e.g."test"                          
-datalocation2          |file location for train data, e.g. "train"                       
-datatype1              |first variable type to choose, "mean" measurements is the default
-datatype2              |second variable type to choose, "std" is the default             
+datalocation1          :    file location for test data, e.g."test"                          
+datalocation2          :    file location for train data, e.g. "train"                       
+datatype1              :    first variable type to choose, "mean" measurements is the default
+datatype2              :    second variable type to choose, "std" is the default             
 
 
 ###Details
@@ -59,7 +59,7 @@ Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
