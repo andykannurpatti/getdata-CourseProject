@@ -1,10 +1,9 @@
-### getdata-CourseProject
-
-The Course Project uses data available from experiments conducted using Samsung Smartphones.  The original data set is available thanks to Reyes-Ortiz et al. (See note at the bottom of the page for detailed reference)
-
 ####run_analysis.R
 
-#####Description
+The script written for the Course Project uses data available from experiments conducted using Samsung Smartphones.  The original data set is available thanks to Reyes-Ortiz et al. (See note at the bottom of the page for detailed reference)
+
+
+#####Description of run_analysis
 
 Create a tidy data set that provides "mean" of selected variables by Subject and Activity from multiple data sets provided in the UCI HAR Dataset. The tidy data set generated chooses only "mean" and "std" data by default; although some flexibility for other selections is made available albeit may require code modifications in the future.
 
@@ -45,7 +44,17 @@ To now generate mean values of the variables by "Subject" and "Activity" an addi
 
 Finally, the data is ordered by the Subject number and written into a text file titled "summarydata.txt".
 
-####See Also
+
+#####Example
+
+
+run_analysis("test","train")
+
+To review the output, requires the use the following command in R:
+
+data <- read.table("summarydata.txt", header=TRUE)
+
+#####See Also
 
 Codebook.md  for data description
 
@@ -58,25 +67,6 @@ https://github.com/andykannurpatti/getdata-CourseProject/blob/master/column_name
 run_analysis.R
 
 https://github.com/andykannurpatti/getdata-CourseProject/blob/master/run_analysis.R
-
-
-#####Example
-
-
-run_analysis("test","train")
-
-To review the output, requires the use the following command in R:
-
-data <- read.table("summarydata.txt", header=TRUE)
-
-
-
-
-
-
-
-
-
 
 
 
