@@ -14,14 +14,11 @@ run_analysis(datalocation1=character, datalocation2=character, datatype1 ="mean"
 
 ###Arguments
 ------------------------------------------------------------------------------------------
-|datalocation1          |file location for test data, e.g."test"                          |
-------------------------------------------------------------------------------------------
-|datalocation2          |file location for train data, e.g. "train"                       |
-------------------------------------------------------------------------------------------
-|datatype1              |first variable type to choose, "mean" measurements is the default|
-------------------------------------------------------------------------------------------
-|datatype2              |second variable type to choose, "std" is the default             |
-------------------------------------------------------------------------------------------
+datalocation1          |file location for test data, e.g."test"                          
+datalocation2          |file location for train data, e.g. "train"                       
+datatype1              |first variable type to choose, "mean" measurements is the default
+datatype2              |second variable type to choose, "std" is the default             
+
 
 ###Details
 
