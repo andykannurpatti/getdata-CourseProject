@@ -2,17 +2,17 @@
 
 The Course Project uses data available from experiments conducted using Samsung Smartphones.  The original data set is available thanks to Reyes-Ortiz et al. (See note at the bottom of the page for detailed reference)
 
-###run_analysis.R
+####run_analysis.R
 
-###Description
+#####Description
 
 Create a tidy data set that provides "mean" of selected variables by Subject and Activity from multiple data sets provided in the UCI HAR Dataset. The tidy data set generated chooses only "mean" and "std" data by default; although some flexibility for other selections is made available albeit may require code modifications in the future.
 
-###Usage
+#####Usage
 
 run_analysis(datalocation1=character, datalocation2=character, datatype1 ="mean", datatype2="std")
 
-###Arguments
+#####Arguments
 ------------------------------------------------------------------------------------------
 datalocation1          :    file location for test data, e.g."test"            
 
@@ -23,7 +23,7 @@ datatype1              :    first variable type to choose, "mean" measurements i
 datatype2              :    second variable type to choose, "std" is the default             
 
 
-###Details
+#####Details
 
 
 This script outputs a tidy data set of the mean values of 79 variables (that are themselves quanitified as mean and standard deviation of measurements) recorded by Smartphones worn by 30 Subjects during 6 different Activities. 
@@ -56,15 +56,19 @@ Finally, the data is ordered by the Subject number and written into a text file 
 
 
 
-==================================================================
+------------------------------------------------------------------
+
 Human Activity Recognition Using Smartphones Data set
 Version 1.0
-==================================================================
+
+------------------------------------------------------------------
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-==================================================================
+
+------------------------------------------------------------------
 
