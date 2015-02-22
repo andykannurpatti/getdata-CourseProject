@@ -38,7 +38,6 @@ run_analysis <- function (datalocation1=character, datalocation2=character, data
 
 ##summarize data to create tidy data containing mean values by Subject and Activity; A tidy data set "summarydata.txt" is written in the folder "UCI HAR Dataset"
         req_data$sub_act <-paste(req_data$Subject,req_data$Activity)
-       # dt <- select(req_data, -matches("Subject"),-matches("Activity"))
         gdt <- group_by(req_data, sub_act)
         x <- summarise_each(gdt,funs(mean))
         x <- select(x, -matches("sub_act"))
