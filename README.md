@@ -22,13 +22,29 @@ datatype2               second variable type to choose, "std" is the default
 ###Details
 
 
-This script starts with the assumption that the Samsung data is available in the working directory in an unzipped UCI HAR Dataset folder. 
+This script outputs a tidy data set of the mean values of 79 variables (that are themselves quanitified as mean and standard deviation of measurements) recorded by Smartphones worn by 30 Subjects during 6 different Activities. 
+
+The script starts with the assumption that the Samsung data is available in the working directory in an unzipped UCI HAR Dataset folder. 
 
 It loads required libraries.  'dplyr' is a required package for this script to run.  If not installed previously, please install 'dplyr'.
 
-run_analysis <- function (datalocation1=character, datalocation2=character, datatype1 ="mean", datatype2="std")
+First the script reads the data sets given the data locations; It is expected that this code is run with the working directory set to  "UCI HAR Dataset" so no folder names are needed for features.txt and activity_labels.txt which provide the variable names and activity names for the test and train dataset.
 
-datalocation1   "test" 
+Next a dataset that contains all the measurements is created by merging "test" and "train" data. This produces a large data set containing 10299 observations and 563 variables when including "Subject" and "Activity".  The column names are first obtained from "features.txt" but will need to be changed as some of the invalid characters in the names create some errors in using subsequent "select" or "contains" functions.
+
+Making syntactically valid names for variables uses the make.names() function.  In the Codebook the new names that correspond to the original names in the dataset (i.e., old names) are pro
+vided for your reference.
+
+In the next section, the R script selects only columns that correspond to "mean" or "std".  There are a few variables that are actually "angle" variables that use a "Mean".  These are ignored as they have been considered not "mean" or "std".  This filtering results in 79 variables.  Including the "Subject" and "Activity" column this results in 81 variables.
+
+To now generate mean values of the variables by "Subject" and "Activity" an additional variable "sub_act" is created that concatenates "Subject" and "Activity" using the paste() function.  Apply summarise to all variables requires the use of summarise_each().
+
+Finally, the data is ordered by the Subject number and written into a text file titled "summarydata.txt".
+
+
+
+
+
 
 
 
