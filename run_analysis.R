@@ -4,7 +4,6 @@ run_analysis <- function (datalocation1=character, datalocation2=character, data
         require(dplyr)
         
 
-
 ##Read the data sets given the data locations; datalocation1 is the folder name with the "test" data and datalocation2 is the folder name for "train" data. It is expected that this code is run with the working directory set to  "UCI HAR Dataset" so no folder names are needed for features.txt and activity_labels.txt
         X_test <- read.table(paste(datalocation1,"/X_test.txt",sep=""))
         X_train <- read.table(paste(datalocation2,"/X_train.txt",sep=""))
